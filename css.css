@@ -43,7 +43,6 @@
     background-color:rgba(0,0,0,0.9);
     top:23px;
     border-radius:30px;
-    
 }
 
 .clock .clockinner .funnyeyes .eye:first-child .pupil{
@@ -64,99 +63,51 @@
 }
 
 @-webkit-keyframes pupil1 {
-    0% {
-    left: 60px;
-    }
-    50% {
-	left: 30px;
-    }
-    100% {
-	left: 60px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }	
 }
 
 @-moz-keyframes pupil1 {
-    0% {
-    left: 60px;
-    }
-    50% {
-    left: 30px;
-    }
-    100% {
-	left: 60px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }
 }
 
 @-o-keyframes pupil1 {
-    0% {
-    left: 60px;
-    }
-    50% {
-    left: 30px;
-    }
-    100% {
-	left: 60px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }
 }
 
 @keyframes pupil1 {
-    0% {
-    left: 60px;
-    }
-    50% {
-    left: 30px;
-    }
-    100% {
-	left: 60px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }
 }
 
 @-webkit-keyframes pupil2 {
-    0% {
-	left: 45px;
-    }
-    50% {
-	left: 15px;
-    }
-    100% {
-	left: 45px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }
 }
 
 @-moz-keyframes pupil2 {
-    0% {
-	left: 45px;
-    }
-    50% {
-	left: 15px;
-    }
-    100% {
-	left: 45px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }
 }
 
 @-o-keyframes pupil2 {
-    0% {
-	left: 45px;
-    }
-    50% {
-	left: 15px;
-    }
-    100% {
-	left: 45px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }
 }
 
 @keyframes pupil2 {
-    0% {
-	left: 45px;
-    }
-    50% {
-	left: 15px;
-    }
-    100% {
-	left: 45px;
-    }	
+    0% { left: 60px; }
+    50% { left: 30px; }
+    100% { left: 60px; }
 }
 
 .clock .clockinner .border {
@@ -176,10 +127,41 @@
     -o-box-shadow: inset 9px 9px 30px rgba(0, 0, 0, .3),
                 inset -9px -9px 30px rgba(0, 0, 0, .3),
                 1px 1px 2px rgba(255, 255, 255, .3);
-    background-color:rgba(225, 225, 225, 0.3) ;
+                
+    background-color:rgba(225, 225, 225, 0.5);
+        
+    -webkit-animation: borderColor 60s infinite ease;
+       -moz-animation: borderColor 60s infinite ease;
+        -ms-animation: borderColor 60s infinite ease;
+         -o-animation: borderColor 60s infinite ease;
+            animation: borderColor 60s infinite ease;
     
     position: relative;
     z-index: 100;
+}
+
+@-webkit-keyframes borderColor {
+    0% { border-color: rgba(255, 0, 0, 1); }
+    50% { border-color: rgba(0, 255, 0, 1); }
+    100% { border-color: rgba(0, 0, 255, 1); }
+}
+
+@-moz-keyframes borderColor {
+    0% { border-color: rgba(255, 0, 0, 1); }
+    50% { border-color: rgba(0, 255, 0, 1); }
+    100% { border-color: rgba(0, 0, 255, 1); }
+}
+
+@-o-keyframes borderColor {
+    0% { border-color: rgba(255, 0, 0, 1); }
+    50% { border-color: rgba(0, 255, 0, 1); }
+    100% { border-color: rgba(0, 0, 255, 1); }
+}
+
+@keyframes borderColor {
+    0% { border-color: rgba(255, 0, 0, 1); }
+    50% { border-color: rgba(0, 255, 0, 1); }
+    100% { border-color: rgba(0, 0, 255, 1); }	
 }
 
 .clock .clockinner .digest {
@@ -517,11 +499,3 @@
             transform:rotate(-20deg);
     }
 }
-
-
-
-
-
-
-
-
